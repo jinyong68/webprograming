@@ -1,0 +1,146 @@
+/* 기본 스타일 */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    width: 100%;
+    height: 10%;
+    padding-top: 20px;
+  }
+  
+  #rosr {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  #rogo {
+    width: 134px;
+    height: 70px;
+    margin-top: 5px;
+    margin-left: 20px;
+  }
+  
+  hr {
+    height: 1px;
+    border: 0;
+  }
+  
+  #list {
+    display: flex; /* flexbox 레이아웃을 사용하여 내부 항목을 배치 */
+    justify-content: center; /* 내부 항목을 가로로 중앙 정렬 */
+  }
+
+  #list > div,
+  .teg {
+      width: 300px; /* 각 항목의 너비를 300px로 설정 */
+      height: 50px; /* 각 항목의 높이를 50px로 설정 */
+      text-align: center; /* 텍스트를 중앙 정렬 */
+      font-size: 16px; /* 폰트 크기를 16px로 설정 */
+      margin: 20px 40px; /* 항목 간의 상하 여백을 20px, 좌우 여백을 40px로 설정 */
+      line-height: 50px; /* 행간을 50px로 설정하여 텍스트를 가운데 정렬 */
+  }
+
+  #list > a > div:hover {
+      background-color: #000; /* 호버 시 배경색을 검정색으로 설정 */
+      color: #fff; /* 호버 시 텍스트 색상을 흰색으로 설정 */
+      transform: scale(1.2); /* 호버 시 항목을 1.2배 확대 */
+  }
+
+  .teg {
+      text-decoration: none; /* 텍스트 밑줄 제거 */
+      color: #000; /* 텍스트 색상을 검정색으로 설정 */
+  }
+
+  .under {
+      background-color: #a6a6a6; /* 배경색을 연회색으로 설정 */
+  }
+
+  #list > div:hover .under {
+      background-color: #fff; /* 호버 시 배경색을 흰색으로 설정 */
+  }
+
+  .detail > img {
+      width: 350px; /* 이미지의 너비를 350px로 설정 */
+      height: 300px; /* 이미지의 높이를 300px로 설정 */
+      float: left; /* 이미지를 왼쪽으로 띄움 */
+      margin-left: 150px; /* 좌측 여백을 150px로 설정 */
+      transition: transform 0.5s, filter 0.5s;
+  }
+  .detail:hover img {
+    transform: scale(1.1);
+    filter: brightness(110%);
+  }
+  
+
+  .detail {
+      margin-top: 20px; /* 상단 여백을 20px로 설정 */
+      width: 100%; /* 너비를 100%로 설정 */
+      height: 350px; /* 높이를 350px로 설정 */
+      text-align: center; /* 텍스트를 중앙 정렬 */
+      padding-top: 20px; /* 상단 패딩을 20px로 설정 */
+      font-size: 20px; /* 폰트 크기를 20px로 설정 */
+      position: relative;
+      overflow: hidden;
+  }
+
+  .example {
+      width: 600px; /* 너비를 600px로 설정 */
+      margin-left: 50px; /* 좌측 여백을 50px로 설정 */
+      float: left; /* 왼쪽으로 띄움 */
+  }
+
+  #NO1 {
+      background-color: #FFCACA; /* 배경색을 연분홍색으로 설정 */
+  }
+
+  #NO2 {
+      background-color: #FFDDCA; /* 배경색을 연살구색으로 설정 */
+  }
+
+
+  @media (max-width: 1550px) {
+    /* 화면 크기가 1550px 이하일 때 적용되는 스타일 */
+  
+    #rosr {
+      position: relative;
+      /* #rosr 요소의 위치를 상대적으로 지정 */
+    }
+  
+    #list {
+      display: block; /* #list 요소를 블록 레벨로 표시하고, 부모 요소 기준으로 위치를 지정힌다.*/
+      position: absolute;
+      top: 100px;
+      left: 50px; /*top: 100px, left: 50px으로 위치를 설정힌다. */
+    }
+  
+    #list > a > div:hover {
+      background-color: #000;
+      color: #fff;
+      transform: scale(1.2);
+      /* #list 요소 내부의 a 태그 안에 있는 div 요소에 마우스 오버 효과를 적용힌다.*/
+      /*배경색을 검정색으로, 텍스트 색상을 흰색으로 변경하고, 크기를 1.2배 확대힌다. */
+    }
+  
+    .detail {
+      width: 700px; /* .detail 클래스를 가진 요소의 크기를 700px x 700px로 지정한다*/
+      height: 700px;
+      margin: auto;
+      margin-top: 10px;/*가운데 정렬하며, 상단에 10px의 여백을 추가한다. */
+    }
+    .detail > img{
+      margin-bottom: 50px;
+    }
+    #NO1 {
+      background-color: #FFCACA;
+      /* #NO1 요소의 배경색을 #FFCACA로 설정한다. */
+    }
+  
+    #NO2 {
+      background-color: #FFDDCA;
+      /* #NO2 요소의 배경색을 #FFDDCA로 설정한다. */
+    }
+  }
+  

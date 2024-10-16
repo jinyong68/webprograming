@@ -1,0 +1,82 @@
+/* 기본 스타일 */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    width: 100%;
+    height: 10%;
+    padding-top: 20px;
+  }
+  
+  #rosr {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  #rogo {
+    width: 134px;
+    height: 70px;
+    margin-top: 5px;
+    margin-left: 20px;
+  }
+  
+  hr {
+    height: 1px;
+    border: 0;
+  }
+  
+  #list {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #list > div,
+  .teg {
+      width: 300px; /* 각 항목과 .teg 요소의 너비를 300px로 설정 */
+      height: 50px; /* 각 항목과 .teg 요소의 높이를 50px로 설정 */
+      text-align: center; /* 텍스트를 중앙 정렬 */
+      font-size: 16px; /* 폰트 크기를 16px로 설정 */
+      margin: 20px 40px; /* 각 항목 간의 상하 여백을 20px, 좌우 여백을 40px로 설정 */
+      line-height: 50px; /* 행간을 50px로 설정하여 텍스트를 수직으로 가운데 정렬 */
+  }
+  
+  #list > div:hover,
+  .teg:hover {
+      background-color: #000; /* 호버 시 배경색을 검정색으로 설정 */
+      color: #fff; /* 호버 시 텍스트 색상을 흰색으로 설정 */
+      transform: scale(1.2); /* 호버 시 항목을 1.2배 확대 */
+  }
+  
+  .teg {
+      text-decoration: none; /* .teg 요소의 텍스트 밑줄 제거 */
+      color: #000; /* .teg 요소의 텍스트 색상을 검정색으로 설정 */
+  }
+  
+  .under {
+    background-color: #a6a6a6;; /* .under 요소의 배경색을 연녹색으로 설정 */
+  }
+  
+  #list > div:hover .under {
+      background-color: #000; /* 호버 시 .under 요소의 배경색을 검정색으로 설정 */
+  }
+  
+  
+  @media (max-width: 1550px) {
+    #rosr{
+      position: relative;
+    }
+    #list{
+      display: block;
+      position: absolute;
+      top: 100px;
+      left: 50px;
+      }
+      #list > a > div:hover{
+        background-color: #000;
+        color: #fff;
+        transform: scale(1.2);
+      }
+}
