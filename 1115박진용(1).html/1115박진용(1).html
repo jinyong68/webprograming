@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>집 밖에 놀거리</title>
+</head>
+<body>
+    <h1>집 밖에 놀거리</h1>
+    <h3>추천 여행지</h3>
+    <h4>제주도</h4>
+    <ol>
+        <li>넓은 바다를 보며 쉴 수 있다</li>
+        <li>한라산을 오르며 놀 수 있다</li>
+    </ol>
+    <img src="images/jeju-island-1063203_640.jpg">
+    <img src="images/sea.jpeg" width="600">
+    <table border="1">
+        <caption>제주도 여행 일정표</caption>
+        <tr>
+            <th>요일</th>
+            <td>월</td>
+            <td>화</td>
+        </tr>
+        <tr>
+            <th>7시~8시</th>
+            <td>-</td>
+            <td>기상 및 아침 식사</td>
+        </tr>
+        <tr>
+            <th>9시~10시</th>
+            <td>공항에서 출발</td>
+            <td rowspan="2">한라산 하산</td>
+        </tr>    
+        <tr>
+            <th>11시~12시</th>
+            <td>숙소로 이동 후 휴식</td>
+        </tr>    
+        <tr>
+            <th>13시~14시</th>
+            <td colspan="2">점심 식사</td>
+        </tr>    
+        <tr>
+            <th>15시~16시</th>
+            <td rowspan="2">한라산 등산</td>
+            <td>서귀포로 이동</td>
+        </tr>    
+        <tr>
+            <th>17시~18시</th>
+            <td rowspan="">바다 구경</td>
+        </tr>
+        <tr>
+            <th>19시~20시</th>
+            <td colspan="2">저녁 식사</td>
+        </tr>
+        <tr>
+            <th>21시~22시</th>
+            <td>휴식 시간</td>
+            <td>공항으로 이동</td>
+        </tr>
+        <tr>
+            <th>23시~23시</th>
+            <td>취침 준비</td>
+        </tr>
+        <tr>
+            <th>24시~7시</th>
+            <td>취침 시간</td>
+        </tr>
+    </table>
+    <label>예약 날짜 입력<input type="datetime-local"></label><br>
+    <label>예약자 이름<input type="u_id"></label><br>
+    <label>예약자 전화번호<input type="tel"></label><br>
+    <label>예약 인원<input type="range" min="0" max="10" value="1"></label><br>
+    <label for="u_memo">기타 요청 사항</label><br>
+    <textarea id="memo" cols="50" rows="3"></textarea><br>
+    <label><input type="radio" name="pay">신용 카드</label>
+    <label><input type="radio" name="pay">현금</label>
+    <label><input type="radio" name="pay">만나서 카드 결재</label><br>
+    <input type="submit" value="예약하기">
+    <input type="reset" value="취소하기">
+</body>
+</html>
