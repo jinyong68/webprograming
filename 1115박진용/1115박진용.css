@@ -1,0 +1,102 @@
+body {    /*배경색 설정*/
+  background: rgb(255, 249, 198);
+}
+.body { /*배경을 flex로 만듦*/
+  display: flex;
+  margin: 50px;
+  justify-content: center;
+}
+form { /*검색창의 위치 조정*/
+  display: flex;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  height: 30px;
+}
+.sc { /*검색창에 들어갈 글자 설정*/
+  padding: 10px;
+  border: none;
+  font-size: 16px;
+}
+button { /*검색 기능 옆에 버튼 디자인*/
+  padding: 10px;
+  border: none;
+  background-color: #333;
+  color: white;
+  font-size: 14px;
+}
+button:hover { /*버튼에 마우스를 올렸을때*/
+  background-color: #555;
+}
+img{ /*이미지의 크기 조정 위치조정*/
+  width: 500px;
+  height: 400px;
+  transition-duration: 0.5s;
+  justify-content: center;
+  position: fixed;
+  top: 200px;
+  float: left;
+}
+img:hover { /*이미지에 마우스를 올렸을때 움직임*/
+  transform: scale(0.5);
+  transform: rotateY(360deg);
+}
+p { /*메뉴에 들어갈 글자색*/
+  color: seashell;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 23px;
+}
+.menu { /*메뉴 공간 만들기*/
+  width: 100%;
+  border: 1px solid white;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(175, 255, 179);
+}
+.box{ /*메뉴 한 칸 공간*/
+  width: 150px;
+  margin: 5px;
+  padding: 5px;
+  background: rgb(121, 255, 107);
+  border: 1px solid yellowgreen;
+  height: 70px;
+}
+.box:hover { /*메뉴를 눌렀을 때*/
+  box-shadow: 0px 0px 3px 3px green; 
+}
+.name {   /*글자 이미지 위에 넣기*/
+  justify-content: center;
+  position: fixed;
+  font-size: 50px;
+  top: 430px;
+  color: orange;
+}
+.name:hover { /*애니메이션 지정*/
+  animation-name: shape;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+@keyframes shape { /*좌우로 움직이는 애니메이션*/
+  from {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+.h1{
+  font-family: 'Times New Roman', Times, serif; /*폰트 바꾸기*/
+  color: red; /*폰트 색깔바꾸기*/
+} 
+h1{
+  margin: 20px; /*폰트 띄우기*/
+}
